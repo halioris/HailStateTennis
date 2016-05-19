@@ -1,0 +1,120 @@
+[
+    {
+        "ID": 1,
+        "Name": "Rishab Agarwal",
+        "Year": "Jr.",
+        "Hometown": "Hyderabad, India",
+        "PhotoFile": "Rishab.jpg",
+        "BigPhotoFile": "Rishabbig.jpg",
+        "Height": "5'7\"",
+        "Weight": "149",
+        "HighSchool": "NRI Academy",
+        "Experience": "2 Letters"
+    },
+    {
+        "ID": 2,
+        "Name": "Nuno Borges",
+        "Year": "Fr.",
+        "Hometown": "Maia, Porto, Portugal",
+        "PhotoFile": "Nuno.jpg",
+        "BigPhotoFile": "Nunobig.jpg",
+        "Height": "6'2\"",
+        "HighSchool": "Escola Secundarua Da Maia",
+        "Experience": "High School"
+    },
+    {
+        "ID": 3,
+        "Name": "Niclas Braun",
+        "Year": "Fr.",
+        "Hometown": "Berlin, Germany",
+        "PhotoFile": "Nic.jpg",
+        "BigPhotoFile": "Nicbig.jpg",
+        "Height": "5'10\"",
+        "Experience": "High School"
+    },
+    {
+        "ID": 4,
+        "Name": "Mate Cutura",
+        "Year": "Jr.",
+        "Hometown": "Posusje, Bosnia & Herzogovinia",
+        "PhotoFile": "Mate.jpg",
+        "BigPhotoFile": "Matebig.jpg",
+        "Height": "6'0\"",
+        "HighSchool": "Tyler [TX] JC",
+        "Experience": "1 Letter"
+    },
+    {
+        "ID": 5,
+        "Name": "Trevor Foshey",
+        "Year": "Fr.",
+        "Hometown": "St. Cloud, FL",
+        "PhotoFile": "Trevor.jpg",
+        "BigPhotoFile": "Trevorbig.jpg",
+        "Height": "6'1\"",
+        "HighSchool": "St. Cloud HS",
+        "Experience": "High School"
+    },
+    {
+        "ID": 6,
+        "Name": "Vaughn Hunter",
+        "Year": "Jr.",
+        "Hometown": "Johannesburg, South Africa",
+        "PhotoFile": "Vaughn.jpg",
+        "BigPhotoFile": "Vaughnbig.jpg",
+        "Height": "5'7\"",
+        "HighSchool": "Tyler [TX] JC",
+        "Experience": "Junior College"
+    },
+    {
+        "ID": 7,
+        "Name": "Strahinja Rakic",
+        "Year": "Fr.",
+        "Hometown": "Belgrade, Serbia",
+        "PhotoFile": "Strale.jpg",
+        "BigPhotoFile": "Stralebig.jpg",
+        "Height": "6'0\"",
+        "HighSchool": "Peta Ekonomska Skola Rakovica",
+        "Experience": "High School"
+    },
+    {
+        "ID": 8,
+        "Name": "Lucas Sanchez",
+        "Year": "Fr.",
+        "Hometown": "Jundiai, Brazil",
+        "PhotoFile": "Lucas.jpg",
+        "BigPhotoFile": "Lucasbig.jpg",
+        "Height": "6'2\"",
+        "Experience": "High School"
+    },
+    {
+        "ID": 9,
+        "Name": "Luka Sucevic",
+        "Year": "Fr.",
+        "Hometown": "Belgrade, Serbia",
+        "PhotoFile": "Luka.jpg",
+        "BigPhotoFile": "Lukabig.jpg",
+        "Height": "6'4\"",
+        "HighSchool": "Srednja Turisticka Skola",
+        "Experience": "High School"
+    },
+    {
+        "ID": 10,
+        "Name": "Matt Roberts",
+        "Position": "Head Coach",
+        "Hometown": "Little Rock, AR",
+        "PhotoFile": "Matt.jpg",
+        "BigPhotoFile": "Mattbig.jpg",
+        "Experience": "1 Year",
+        "GradYear": "2006",
+        "AlmaMater": "Arkansas"
+    },
+    {
+        "ID": 11,
+        "Name": "Tanner Stump",
+        "Position": "Assistant Coach",
+        "Hometown": "Bradenton, FL",
+        "PhotoFile": "Tanner.jpg",
+        "BigPhotoFile": "Tannerbig.jpg",
+        "Experience": "1 Year"
+    }
+]

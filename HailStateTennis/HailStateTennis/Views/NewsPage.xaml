@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+       xmlns:local="clr-namespace:HailStateTennis;assembly=HailStateTennis"
+			 x:Class="HailStateTennis.NewsPage"
+			 Icon="today.png"
+			 Title="News">
+  <ContentPage.Resources>
+    <ResourceDictionary>
+      <local:StringToResourceConverter x:Key="StringToResourceConverter" />
+    </ResourceDictionary>
+  </ContentPage.Resources>
+  <ContentPage.Content>
+    <ListView x:Name="newsListView" ItemSelected="OnItemSelected" SeparatorVisibility="None" RowHeight="100">
+      <ListView.ItemTemplate>
+        <DataTemplate>
+          <ViewCell>
+            <ContentView Padding="5">
+              <Frame OutlineColor="Accent" Padding="10">
+                <StackLayout Orientation="Horizontal">
+                  <Image Source="{Binding PicFile, Converter={StaticResource StringToResourceConverter}}"/>
+                  <StackLayout>
+                    <Label Text="{Binding Headline}"/>
+                  </StackLayout>
+                </StackLayout>
+              </Frame>
+            </ContentView>
+          </ViewCell>
+        </DataTemplate>
+      </ListView.ItemTemplate>
+    </ListView>
+	</ContentPage.Content>
+</ContentPage>
+

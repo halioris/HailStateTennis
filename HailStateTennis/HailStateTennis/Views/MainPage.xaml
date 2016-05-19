@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms" 
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+            xmlns:local="clr-namespace:HailStateTennis;assembly=HailStateTennis" 
+            x:Class="HailStateTennis.MainPage">
+	<local:NewsPage />
+	<NavigationPage Title="Schedule" Icon="schedule.png">
+		<x:Arguments>
+			<local:SchedulePage />
+		</x:Arguments>
+	</NavigationPage>
+  <NavigationPage Title="Roster" Icon="today.png">
+    <x:Arguments>
+      <local:RosterPage />
+    </x:Arguments>
+  </NavigationPage>
+  <local:StandingsPage />
+<!--  <local:SettingsPage />-->
+</TabbedPage>
+

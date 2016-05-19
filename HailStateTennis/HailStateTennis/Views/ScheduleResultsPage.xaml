@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+			 x:Class="HailStateTennis.ScheduleResultsPage"
+			 Title="Results">
+  <ContentPage.Content>
+    <!--
+    <ScrollView>
+      <StackLayout Orientation="Vertical">
+        <Label x:Name="Result" Text="" HorizontalOptions="Start" VerticalOptions="Start" FontAttributes="Bold,Italic" FontSize="Large"/>
+        <Label Text="" HorizontalOptions="Start" VerticalOptions="Start" FontAttributes="Bold"/>
+        <Label Text="Doubles" HorizontalOptions="FillAndExpand" VerticalOptions="Start" FontAttributes="Bold" BackgroundColor="Maroon"/>
+        <Label x:Name="Dubs1" Text="" HorizontalOptions="Start" VerticalOptions="Start"/>
+        <Label x:Name="Dubs2" Text="" HorizontalOptions="Start" VerticalOptions="Start"/>
+        <Label x:Name="Dubs3" Text="" HorizontalOptions="Start" VerticalOptions="Start"/>
+        <Label Text="" HorizontalOptions="Start" VerticalOptions="Start" FontAttributes="Bold"/>
+        <Label Text="Singles" HorizontalOptions="FillAndExpand" VerticalOptions="Start" FontAttributes="Bold" BackgroundColor="Maroon"/>
+        <Label x:Name="Singles1" Text="" HorizontalOptions="Start" VerticalOptions="Start"/>
+        <Label x:Name="Singles2" Text="" HorizontalOptions="Start" VerticalOptions="Start"/>
+        <Label x:Name="Singles3" Text="" HorizontalOptions="Start" VerticalOptions="Start"/>
+        <Label x:Name="Singles4" Text="" HorizontalOptions="Start" VerticalOptions="Start"/>
+        <Label x:Name="Singles5" Text="" HorizontalOptions="Start" VerticalOptions="Start"/>
+        <Label x:Name="Singles6" Text="" HorizontalOptions="Start" VerticalOptions="Start"/>
+      </StackLayout>
+    </ScrollView>
+    -->
+  </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,251 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <MinimumVisualStudioVersion>10.0</MinimumVisualStudioVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F9721E01-0F88-41BA-8B8C-1E44FE006445}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HailStateTennis</RootNamespace>
+    <AssemblyName>HailStateTennis</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Profile111</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Data\HttpClientManager.cs" />
+    <Compile Include="Data\INewsRestService.cs" />
+    <Compile Include="Data\IRosterRestService.cs" />
+    <Compile Include="Data\IStandingRestService.cs" />
+    <Compile Include="Data\IScheduleResultRestService.cs" />
+    <Compile Include="Data\NewsManager.cs" />
+    <Compile Include="Data\NewsRestService.cs" />
+    <Compile Include="Data\RosterManager.cs" />
+    <Compile Include="Data\RosterRestService.cs" />
+    <Compile Include="Data\ScheduleItemManager.cs" />
+    <Compile Include="Constants.cs" />
+    <Compile Include="Data\IScheduleRestService.cs" />
+    <Compile Include="Data\ScheduleRestService.cs" />
+    <Compile Include="Data\ScheduleResultManager.cs" />
+    <Compile Include="Data\ScheduleResultRestService.cs" />
+    <Compile Include="Data\StandingManager.cs" />
+    <Compile Include="Data\StandingRestService.cs" />
+    <Compile Include="Data\WebProxy.cs" />
+    <Compile Include="ImageResourceExtension.cs" />
+    <Compile Include="ITextToSpeech.cs" />
+    <Compile Include="HailStateTennis.cs" />
+    <Compile Include="Models\DayResult.cs" />
+    <Compile Include="Models\MatchResult.cs" />
+    <Compile Include="Models\NewsItem.cs" />
+    <Compile Include="Models\Roster.cs" />
+    <Compile Include="Models\ScheduleResult.cs" />
+    <Compile Include="Models\SectionResult.cs" />
+    <Compile Include="Models\Standing.cs" />
+    <Compile Include="Views\MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Models\ScheduleItem.cs" />
+    <Compile Include="Views\PlayerPage.xaml.cs">
+      <DependentUpon>PlayerPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\RosterPage.xaml.cs">
+      <DependentUpon>RosterPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SchedulePage.xaml.cs">
+      <DependentUpon>SchedulePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SettingsPage.xaml.cs">
+      <DependentUpon>SettingsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\StandingsPage.xaml.cs">
+      <DependentUpon>StandingsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\NewsPage.xaml.cs">
+      <DependentUpon>NewsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ScheduleResultsPage.xaml.cs">
+      <DependentUpon>ScheduleResultsPage.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Newtonsoft.Json.8.0.3\lib\portable-net40+sl5+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Core, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Xamarin.Forms.2.2.0.31\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Platform, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Xamarin.Forms.2.2.0.31\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.Platform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Xaml, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Xamarin.Forms.2.2.0.31\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.Xaml.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="StaticData\MSUschedule.json" />
+    <EmbeddedResource Include="StaticData\Match35.json" />
+    <EmbeddedResource Include="StaticData\Match36.json" />
+    <EmbeddedResource Include="StaticData\Match34.json" />
+    <None Include="packages.config" />
+    <EmbeddedResource Include="StaticData\Standings.json" />
+    <EmbeddedResource Include="StaticData\Match37.json" />
+    <EmbeddedResource Include="StaticData\Match38.json" />
+    <EmbeddedResource Include="StaticData\Match1.json" />
+    <EmbeddedResource Include="StaticData\Match4.json" />
+    <EmbeddedResource Include="StaticData\Match8.json" />
+    <EmbeddedResource Include="StaticData\Match11.json" />
+    <EmbeddedResource Include="StaticData\Match15.json" />
+    <EmbeddedResource Include="StaticData\Match18.json" />
+    <EmbeddedResource Include="StaticData\Match23.json" />
+    <EmbeddedResource Include="StaticData\Match31.json" />
+    <EmbeddedResource Include="StaticData\Match39.json" />
+    <EmbeddedResource Include="StaticData\Match40.json" />
+    <EmbeddedResource Include="StaticData\Match41.json" />
+    <EmbeddedResource Include="StaticData\Match42.json" />
+    <EmbeddedResource Include="StaticData\Match43.json" />
+    <EmbeddedResource Include="StaticData\Match44.json" />
+    <EmbeddedResource Include="StaticData\Match45.json" />
+    <EmbeddedResource Include="StaticData\Match46.json" />
+    <EmbeddedResource Include="StaticData\Match47.json" />
+    <EmbeddedResource Include="StaticData\Match48.json" />
+    <EmbeddedResource Include="StaticData\Match49.json" />
+    <EmbeddedResource Include="StaticData\Match50.json" />
+    <EmbeddedResource Include="StaticData\Match51.json" />
+    <EmbeddedResource Include="StaticData\Match52.json" />
+    <EmbeddedResource Include="StaticData\Match53.json" />
+    <EmbeddedResource Include="StaticData\Match54.json" />
+    <EmbeddedResource Include="StaticData\Match55.json" />
+    <EmbeddedResource Include="StaticData\Roster.json" />
+    <EmbeddedResource Include="StaticData\News.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\MainPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\NewsPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\SchedulePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\ScheduleResultsPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\SettingsPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\StandingsPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\RosterPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\Rishab.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\Lucas.jpg" />
+    <EmbeddedResource Include="Images\Luka.jpg" />
+    <EmbeddedResource Include="Images\Mate.jpg" />
+    <EmbeddedResource Include="Images\Nic.jpg" />
+    <EmbeddedResource Include="Images\Nuno.jpg" />
+    <EmbeddedResource Include="Images\Strale.jpg" />
+    <EmbeddedResource Include="Images\Trevor.jpg" />
+    <EmbeddedResource Include="Images\Vaughn.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\Matt.jpg" />
+    <EmbeddedResource Include="Images\Tanner.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\News1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\PlayerPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\Mattbig.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\Lucasbig.jpg" />
+    <EmbeddedResource Include="Images\Lukabig.jpg" />
+    <EmbeddedResource Include="Images\Matebig.jpg" />
+    <EmbeddedResource Include="Images\Nicbig.jpg" />
+    <EmbeddedResource Include="Images\Nunobig.jpg" />
+    <EmbeddedResource Include="Images\Rishabbig.jpg" />
+    <EmbeddedResource Include="Images\Stralebig.jpg" />
+    <EmbeddedResource Include="Images\Trevorbig.jpg" />
+    <EmbeddedResource Include="Images\Vaughnbig.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\Tannerbig.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\trevSEC.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
+  <Import Project="..\..\packages\Xamarin.Forms.2.2.0.31\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets" Condition="Exists('..\..\packages\Xamarin.Forms.2.2.0.31\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\..\packages\Xamarin.Forms.2.2.0.31\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Xamarin.Forms.2.2.0.31\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

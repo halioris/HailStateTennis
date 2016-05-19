@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:HailStateTennis;assembly=HailStateTennis"
+             x:Class="HailStateTennis.PlayerPage"
+             Icon="today.png"
+      			 Title="Roster">
+  <ContentPage.Resources>
+    <ResourceDictionary>
+      <local:StringToResourceConverter x:Key="StringToResourceConverter" />
+      <local:AttributePresentConverter x:Key="AttributePresentConverter" />
+    </ResourceDictionary>
+  </ContentPage.Resources>
+  <ContentPage.Content>
+    <ScrollView>
+      <StackLayout Orientation="Vertical">
+        <StackLayout Orientation="Horizontal" Spacing="10">
+          <Image Source="{Binding BigPhotoFile, Converter={StaticResource StringToResourceConverter}}" VerticalOptions="Start"/>
+          <StackLayout Orientation="Vertical">
+            <Label Text="{Binding Name}" FontAttributes="Bold" TextColor="Accent"/>
+            <Grid RowSpacing="0" ColumnSpacing="5">
+              <Grid.RowDefinitions>
+                <RowDefinition Height="{Binding Height, Converter={StaticResource AttributePresentConverter}}"/>
+                <RowDefinition Height="{Binding Weight, Converter={StaticResource AttributePresentConverter}}"/>
+                <RowDefinition Height="{Binding Position, Converter={StaticResource AttributePresentConverter}}"/>
+                <RowDefinition Height="{Binding Year, Converter={StaticResource AttributePresentConverter}}"/>
+                <RowDefinition Height="{Binding Hometown, Converter={StaticResource AttributePresentConverter}}"/>
+                <RowDefinition Height="{Binding HighSchool, Converter={StaticResource AttributePresentConverter}}"/>
+                <RowDefinition Height="{Binding AlmaMater, Converter={StaticResource AttributePresentConverter}}"/>
+                <RowDefinition Height="{Binding GradYear, Converter={StaticResource AttributePresentConverter}}"/>
+                <RowDefinition Height="{Binding Experience, Converter={StaticResource AttributePresentConverter}}"/>
+              </Grid.RowDefinitions>
+              <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+              </Grid.ColumnDefinitions>
+              <Label Grid.Row="0" Grid.Column="0" Text="Height" FontAttributes="Bold"/>
+              <Label Grid.Row="0" Grid.Column="1" Text="{Binding Height}"/>
+              <Label Grid.Row="1" Grid.Column="0" Text="Weight" FontAttributes="Bold"/>
+              <Label Grid.Row="1" Grid.Column="1" Text="{Binding Weight}"/>
+              <Label Grid.Row="2" Grid.Column="0" Text="Position" FontAttributes="Bold"/>
+              <Label Grid.Row="2" Grid.Column="1" Text="{Binding Position}"/>
+              <Label Grid.Row="3" Grid.Column="0" Text="Year" FontAttributes="Bold"/>
+              <Label Grid.Row="3" Grid.Column="1" Text="{Binding Year}"/>
+              <Label Grid.Row="4" Grid.Column="0" Text="Hometown" FontAttributes="Bold"/>
+              <Label Grid.Row="4" Grid.Column="1" Text="{Binding Hometown}"/>
+              <Label Grid.Row="5" Grid.Column="0" Text="High School" FontAttributes="Bold"/>
+              <Label Grid.Row="5" Grid.Column="1" Text="{Binding HighSchool}"/>
+              <Label Grid.Row="6" Grid.Column="0" Text="Alma Mater" FontAttributes="Bold"/>
+              <Label Grid.Row="6" Grid.Column="1" Text="{Binding AlmaMater}"/>
+              <Label Grid.Row="7" Grid.Column="0" Text="Graduating Year" FontAttributes="Bold"/>
+              <Label Grid.Row="7" Grid.Column="1" Text="{Binding GradYear}"/>
+              <Label Grid.Row="8" Grid.Column="0" Text="Experience" FontAttributes="Bold"/>
+              <Label Grid.Row="8" Grid.Column="1" Text="{Binding Experience}"/>
+            </Grid>
+          </StackLayout>
+        </StackLayout>
+      </StackLayout>
+    </ScrollView>
+  </ContentPage.Content>
+</ContentPage>

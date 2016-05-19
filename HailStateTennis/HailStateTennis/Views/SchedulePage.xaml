@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       xmlns:local="clr-namespace:HailStateTennis;assembly=HailStateTennis"
+			 x:Class="HailStateTennis.SchedulePage"
+			 Title="Schedule">
+  <ContentPage.Resources>
+    <ResourceDictionary>
+      <local:MatchDateConverter x:Key="MatchDateConverter" />
+    </ResourceDictionary>
+  </ContentPage.Resources>
+  <ContentPage.Content>
+    <StackLayout>
+      <ListView x:Name="listView" StyleId="ScheduleId" ItemSelected="OnItemSelected" CachingStrategy="RecycleElement" SeparatorColor="Maroon" HasUnevenRows="True">
+        <ListView.ItemTemplate>
+          <DataTemplate>
+            <ViewCell>
+              <Grid Padding="5,0,5,0" RowSpacing="0" ColumnSpacing="5">
+                <Grid.RowDefinitions>
+                  <RowDefinition Height="Auto"/>
+                  <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                  <ColumnDefinition Width="65"/>
+                  <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Label StyleId="MatchDateId" Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" Text="{Binding Converter={StaticResource MatchDateConverter}, Path=.}" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" FontSize="Micro"/>
+                <Label Grid.Row="0" Grid.Column="1" Text="{Binding Opponent}" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" FontSize="Small" TextColor="Accent"/>
+                <Label Grid.Row="1" Grid.Column="1" Text="{Binding Location}" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" FontSize="Small" FontAttributes="Italic"/>
+              </Grid>
+            </ViewCell>
+          </DataTemplate>
+        </ListView.ItemTemplate>
+      </ListView>
+    </StackLayout>
+  </ContentPage.Content>
+</ContentPage>

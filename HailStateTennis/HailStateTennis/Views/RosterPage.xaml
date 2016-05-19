@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:HailStateTennis;assembly=HailStateTennis"
+             x:Class="HailStateTennis.RosterPage"
+             Icon="today.png"
+      			 Title="Roster">
+  <!-- TODO: change icon -->
+  <ContentPage.Resources>
+    <ResourceDictionary>
+      <local:StringToResourceConverter x:Key="StringToResourceConverter" />
+      <local:DetailConverter x:Key="DetailConverter" />
+    </ResourceDictionary>
+  </ContentPage.Resources>
+  <ContentPage.Content>
+    <StackLayout>
+      <ListView x:Name="rosterListView" ItemSelected="OnItemSelected" CachingStrategy="RecycleElement" SeparatorColor="Maroon" HasUnevenRows="True">
+        <ListView.ItemTemplate>
+          <DataTemplate>
+            <ImageCell x:Name="rosterCell" ImageSource="{Binding PhotoFile, Converter={StaticResource StringToResourceConverter}}" Text="{Binding Name}" Detail="{Binding ., Converter={StaticResource DetailConverter}}"/>
+          </DataTemplate>
+        </ListView.ItemTemplate>
+      </ListView>
+    </StackLayout>
+  </ContentPage.Content>
+</ContentPage>

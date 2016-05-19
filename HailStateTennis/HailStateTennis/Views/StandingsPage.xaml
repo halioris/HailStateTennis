@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:HailStateTennis;assembly=HailStateTennis"
+             x:Class="HailStateTennis.StandingsPage"
+             Title="Standings">
+  <!--
+  <ContentPage.Resources>
+    <ResourceDictionary>
+      <local:SECRecordConverter x:Key="SECRecordConverter" />
+      <local:OverallRecordConverter x:Key="OverallRecordConverter" />
+    </ResourceDictionary>
+  </ContentPage.Resources>
+  -->
+  <ContentPage.Content>
+    <!--
+    <StackLayout>
+      <ListView x:Name="standingsListView" CachingStrategy="RecycleElement" SeparatorColor="Maroon">
+        <ListView.ItemTemplate>
+          <DataTemplate>
+            <ViewCell>
+              <Grid Padding="1">
+                <Grid.RowDefinitions>
+                  <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                  <ColumnDefinition Width="Auto"/>
+                  <ColumnDefinition Width="Auto"/>
+                  <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <Label Grid.Row="0" Grid.Column="0" Text="{Binding Team}" VerticalTextAlignment="Center" VerticalOptions="CenterAndExpand"/>
+                <Label Grid.Row="0" Grid.Column="1" Text="{Binding ., Converter={StaticResource SECRecordConverter}}" VerticalTextAlignment="Center" VerticalOptions="CenterAndExpand" HorizontalTextAlignment="Start"/>
+                <Label Grid.Row="0" Grid.Column="2" Text="{Binding ., Converter={StaticResource OverallRecordConverter}}" VerticalTextAlignment="Center" VerticalOptions="CenterAndExpand" HorizontalTextAlignment="Start"/>
+              </Grid>
+            </ViewCell>
+          </DataTemplate>
+        </ListView.ItemTemplate>
+      </ListView>
+    </StackLayout>
+    -->
+  </ContentPage.Content>
+</ContentPage>

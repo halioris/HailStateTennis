@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:local="clr-namespace:HailStateTennis;assembly=HailStateTennis"
+             x:Class="HailStateTennis.SettingsPage" 
+             Icon="settings.png" 
+             Title="Settings">
+  <ContentPage.Content>
+    <StackLayout>
+      <Label Text="Settings go here" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+      <TableView Intent="Settings">
+        <TableRoot>
+          <TableSection Title="Data Source">
+            <SwitchCell Text="Static Data" On="{x:Static local:App.SettingsStaticData}" OnChanged="OnChangedStaticData"/>
+            <SwitchCell x:Name="UseProxy" Text="Use Proxy" On="{x:Static local:App.SettingsUseProxy}" OnChanged="OnChangedUseProxy"/>
+          </TableSection>
+        </TableRoot>
+      </TableView>
+    </StackLayout>
+  </ContentPage.Content>
+</ContentPage>
