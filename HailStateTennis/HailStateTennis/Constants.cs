@@ -5,7 +5,7 @@ namespace HailStateTennis
 	public static class Constants
 	{
         public static string ScheduleUrl = "http://halioris.onlinewebshop.net/MSUschedule.json";
-        public static string StaticSchedule = "HailStateTennis.StaticData.MSUschedule.json"
+        public static string StaticSchedule = "HailStateTennis.StaticData.MSUschedule.json";
         public static string ResultUrl = "http://halioris.onlinewebshop.net/Match{0}.json";
         public static string StaticResult = "HailStateTennis.StaticData.Match{0}.json";
         public static string StandingUrl = "http://halioris.onlinewebshop.net/Standings.json";
